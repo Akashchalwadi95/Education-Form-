@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <fieldset></fieldset>
+    <style>
+        body {
+            background-color: yellowgreen;
+            text-align: center;
+        }
+
+        #title {
+            background-color: aliceblue;
+            
+        }
+
+        #form {
+           background-color: lightyellow;
+           max-width: 500px;
+           margin: 50px auto ;
+           box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+           text-align: left;
+        }
+        
+        .form-control input,select,textarea {
+            padding: 10px;
+            width: 90%;
+            border-radius: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <main id="main">
+        <h1 id="title"><b>Education Survey Form</b></h1>
+        <form id="form"><br>
+           <div class="form-control">
+            <label for="Name" id="label-Name">Name</label><br>
+            <input type="text" id="Name" placeholder="Enter your name here" >
+           </div><br>
+
+           <div class="form-control">
+            <label for="Email" id="lbel-Email">Email</label><br>
+            <input type="email" id="Email" placeholder="Enter your email here">
+           </div><br>
+
+           <div class="form-control">
+            <label for="Age" id="lbel-Age">Age</label><br>
+            <input type="number" id="Age" placeholder="Enter your Age here">
+           </div><br>
+
+           <div id="description">
+            <label for="description" id="label-description">what is your description</label><br>
+            <select name="role" id="role">
+                <option value="student">student</option>
+                <option value="intern">intern</option>
+                <option value="professional">professional</option>
+                <option value="other">other</option>
+            </select>
+           </div><br>
+           <div id="radio" >
+            <label>Do you like indian Education system</label><br>
+            <label for="ans-1"></label>
+            <input type="radio" id="ans-1">Yes</input><br>
+            <label for="ans-2"></label>
+            <input type="radio" id="ans-2">No</input><br>
+            <label for="ans-3"></label>
+            <input type="radio" id="ans-3">dont want to comment</input>
+           </div><br>
+
+           <div id="checkbox">
+            <label>Languages and Frameworks known(check all that apply)</label><br>
+            <label for="checkbox-1" id="label-checkbox"></label>
+            <input type="checkbox" id="checkbox-1">C++</input><br>
+
+            <label for="checkbox-2" id="label-checkbox"></label>
+            <input type="checkbox" id="checkbox-2">Java</input><br>
+
+            <label for="checkbox-3" id="label-checkbox"></label>
+            <input type="checkbox" id="checkbox-3">Python</input><br>
+
+            <label for="checkbox-4" id="label-checkbox"></label>
+            <input type="checkbox" id="checkbox-4">Web development</input><br>
+
+            <label for="checkbox-5" id="label-checkbox"></label>
+            <input type="checkbox" id="checkbox-5">Android development</input><br>
+
+            <label for="checkbox-6" id="label-checkbox"></label>
+            <input type="checkbox" id="checkbox-6">C</input><br>
+           </div><br>
+
+           <div id="comments">
+            <label for="comments" id="label-comment">Any comments or suggestions</label><br>
+            <textarea id="comments" placeholder="Enter your suggestions here"></textarea>
+           </div><br>
+
+           <div>
+            <button type="submit" value="submit">submit</button>
+           </div><br>
+        </form>
+    </main>
+    
+</body>
+</html>
